@@ -1,4 +1,4 @@
-<h1> WELCOME!!! </h1>
+<h1 align="center"> WELCOME!!! </h1>
 <p> My first bot, and I'm still a beginner making codes. I'm very friendly, if you have questions or how to use it in your code, you can call me! I will always be willing to help you. :)</p>
 
 <hr> 
@@ -6,12 +6,6 @@
 <h1 align="center"> About Bot </h1>
 <p> Bot inspired by Maka Albarn, my favorite character from Soul Eater after crona.
 A bot with several features, including moderation, roleplay, and whatever I feel like putting. </p>
-
-<p align="center">
-        <img src="https://storage.googleapis.com/replit/images/1654088956564_de94d8d97a3f85ec04d551893146a96e.png">
-        <p> Discord.js V14 </p>
-</p>
-
 
 <hr> 
 
@@ -27,5 +21,5 @@ A bot with several features, including moderation, roleplay, and whatever I feel
 
 <p align="center">
         <img src="https://storage.googleapis.com/replit/images/1654088956564_de94d8d97a3f85ec04d551893146a96e.png">
-        <p> Discord.js V14 </p>
+        <p align="center"> Discord.js V14 </p>
 </p>
