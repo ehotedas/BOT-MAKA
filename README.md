@@ -23,3 +23,7 @@ A bot with several features, including moderation, roleplay, and whatever I feel
         <img src="https://storage.googleapis.com/replit/images/1654088956564_de94d8d97a3f85ec04d551893146a96e.png">
         <p align="center"> Discord.js V14 </p>
 </p>
+
+<hr>
+
+<p align="center"> <img src="https://raw.githubusercontent.com/ehotedas/BOT_MAKA/main/src/image/maka.gif"> </p>
