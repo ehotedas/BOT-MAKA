@@ -1,7 +1,7 @@
 // Const Variables
 const { REST } = require('@discordjs/rest');
 const { Routes, Component } = require('discord.js');
-const { token } = require('./config.json');
+const {clientId, guildId, token} = require('./config.json')
 const fs = require('node:fs');
 const config = require('./config.json');
 const commands = require('./commands.js');
@@ -9,11 +9,7 @@ const { Client, GatewayIntentBits, ActivityType  } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildWebhooks, GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildBans, GatewayIntentBits.GuildScheduledEvents, GatewayIntentBits.GuildPresences]});
 const { PermissionsBitField, PermissionFlagsBits } = require('discord.js');
 
-// Comes from config.js
-const clientId = config.clientId;
-const guildId = config.guildId;
-
-const rest = new REST({ version: '10' }).setToken(config.token);
+const rest = new REST({ version: '10' }).setToken(token);
 
 (async () => {
 	try {
@@ -34,10 +30,9 @@ const rest = new REST({ version: '10' }).setToken(config.token);
 //Event that occurs when the bot comes online and set activity your bot
 
 client.on('ready', () => {
-  console.log("\033[34m[INFO]" + ` Logged in as ${client.user.tag}!` )
- 
   client.user.setActivity('Shibusen', { type: ActivityType.Competing });
   client.user.setStatus('dnd');
+  console.log("\033[34m[INFO]" + ` Logged in as ${client.user.tag}!` ) 
 });
 
 
@@ -70,10 +65,6 @@ client.on("guildMemberAdd", async member => {
 				member.roles.add('id role here')
 				
 	channel.send({embeds:[embedWelcome]});
-	
-	
-	
-
 });
 
 
@@ -143,4 +134,4 @@ client.on('interactionCreate', interaction => {
 });
 
 
-client.login(config.token);
+client.login(token);
